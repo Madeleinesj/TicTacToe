@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="displayAge"></p>
+        <script>
+            let my_function = (a, b) => a + b;
+            document.getElementById("demo").innerHTML = my_function(2, 5);
+
+            var ages = [2, 10, 18, 20, 13, 15, 30];
+            let checkAge = ages.some(mys_function);
+            document.getElementById("displayAge").innerHTML = "This is " + checkAge;
+            function mys_function(value, index, array) {
+               return value > 18;
+            }
+            
+        </script>
+    </body>
+</html>
